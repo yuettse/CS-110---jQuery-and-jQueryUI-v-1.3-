@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<meta charset="UTF-8">
+		<title>Yuet jquery assignment1</title>
+		<link rel=stylesheet href="jqueryA1.css">
+		<script>
+			$(document).ready(function(){
+				alert("how are you");
+
+				$('#fadeIn').hide();
+
+				$('#slidetoggle').click(function(){
+					$('img').slideToggle("slow");
+				});
+
+				$('#slideup').click(function(){
+					$('img').slideUp("fast");
+				});
+
+
+				$('#hide').click(function(){
+					$('p').hide("slow");
+				});
+
+				$('#changetext').click(function(){
+					$('p').text($('#enter').val());
+				});
+
+				$('#before').click(function(){
+					$('p').before($('#enter').val());
+				});
+
+				$('#append').click(function(){
+					$('p').append($('#enter').val());
+				});
+
+				$('#fadeIn').click(function(){
+					$('#container').fadeIn(5000);
+					$('#fadeIn').fadeOut(5000);
+					$('#fadeOut').fadeIn(5000);
+				});
+
+				$('#fadeOut').click(function(){
+					$('#container').fadeOut(5000);
+					$('#fadeIn').fadeIn(5000);
+					$('#fadeOut').fadeOut(5000);
+				});
+
+
+			});
+			
+		</script>
+	</head>
+
+	<body>
+		<button id="fadeOut">fadeOut</button>
+		<button id="fadeIn">fadeIn</button>
+		<div id="container">
+			<div id="addclass">
+				<ul>
+					<li><button id="append">append</button></li>
+					<li><button id="before">before</button></li>
+					<input type="text" value="enter your text here" id="enter">
+					<li><button id="changetext">change text</button></li>
+					<li><button id="hide">hide</button></li>
+				</ul>
+				<p>Click the button to change color</p>
+			</div>
+			<br>
+			<div id="picture">
+				<button id="slidetoggle">Slidetoggle</button>
+				<button id="slideup">Slideup</button>
+				<img src="https://www.google.com/images/srpr/logo11w.png">
+			</div>
+		</div>
+	</body>
+</html>
