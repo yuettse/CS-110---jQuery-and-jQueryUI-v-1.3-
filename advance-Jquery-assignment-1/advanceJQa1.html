@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Yuet Advance JQ assignment 1</title>
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			
+			$(function(){
+				$('button').click(function(){
+					$('thead').siblings().append("<tr>"+"<td>"+$('#inputfirst').val()+"</td>"+"<td>"+$('#inputlast').val()+"</td>"+"<td>"+$('#inputemail').val()+"</td>"+"<td>"+$('#inputcontact').val()+"</td>"+"</tr>");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<strong>Add User</strong>
+			<hr>
+			<div id="inputs">	
+				<div class="form-group">
+					<label>First name</label><input id="inputfirst" type="text" placeholder="First Name">
+				</div>
+				<div class="form-group">
+					<label>Last name</label><input id="inputlast" type="text" placeholder="Last Name">
+				</div>
+				<div class="form-group">
+					<label>E-mail</label><input id="inputemail" type="email" placeholder="E-mail">
+				</div>
+				<div class="form-group">
+					<label>Contact No.</label><input id="inputcontact" type="text" placeholder="Contact No.">
+				</div>
+			</div>
+			<button class="btn btn-lg btn-primary" type="submit">Add user</button>
+			<table>
+				<thead>
+					<tr>
+						<th><div id="firstname"><strong>First Name</strong></div></th>
+						<th><div id="lastname"><strong>Last Name</strong></div></th>
+						<th><div id="email"><strong>Email Address</strong></div></th>
+						<th><div id="contact"><strong>Contact #</strong></div></th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+	</body>
+</html>
