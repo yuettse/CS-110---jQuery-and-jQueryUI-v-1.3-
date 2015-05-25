@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Puzzle Yuet</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="puzzle.css">
+		<script>
+
+
+			
+			$(document).ready(function(){
+
+				
+				$('#c0').click(function(){
+					if($('#c0').attr('src')=="img/cat0.png") {
+						$('#c0').attr('src', "img/ninja0.png");
+					} else {
+						$('#c0').attr('src', "img/cat0.png");
+					}
+				});
+
+				$('#c1').click(function(){
+					if($('#c1').attr('src')=="img/cat1.png") {
+						$('#c1').attr('src', "img/ninja1.png");
+					} else {
+						$('#c1').attr('src', "img/cat1.png");
+					}
+				});
+
+				$('#c2').click(function(){
+					if($('#c2').attr('src')=="img/cat2.png") {
+						$('#c2').attr('src', "img/ninja2.png");
+					} else {
+						$('#c2').attr('src', "img/cat2.png");
+					}
+				});
+
+				$('#c3').click(function(){
+					if($('#c3').attr('src')=="img/cat3.png") {
+						$('#c3').attr('src', "img/ninja3.png");
+					} else {
+						$('#c3').attr('src', "img/cat3.png");
+					}
+				});
+
+				$('#c4').click(function(){
+					if($('#c4').attr('src')=="img/cat4.png") {
+						$('#c4').attr('src', "img/ninja4.png");
+					} else {
+						$('#c4').attr('src', "img/cat4.png");
+					}
+				});
+
+
+			});
+
+		</script>
+	</head>
+	<body>
+		<div id="img1">
+			<img id="c0" src="img/cat0.png">
+			<img id="c1" src="img/cat1.png">
+			<img id="c2" src="img/cat2.png">
+			<img id="c3" src="img/cat3.png">
+			<img id="c4" src="img/cat4.png">
+		</div>
+	</body>
+</html>
