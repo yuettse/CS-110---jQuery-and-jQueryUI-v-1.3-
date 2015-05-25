@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<title>Disappear Ninja by Yuet</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="disappear ninja.css">
+		<script>
+			$(document).ready(function(){
+				
+				$('img').click(function(){
+					$(this).hide(1000);
+				});
+				$('#restore').click(function(){
+					$('img').fadeIn(1000);
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div id="container">
+			<strong>jQuery - assignment Yuet</strong>
+			<div id="ninjas1">
+				<table>
+					<tr>
+						<th><img src="http://ddragon.leagueoflegends.com/cdn/5.7.2/img/passive/shadowninja_P.png"></th>
+						<th><img src="http://ddragon.leagueoflegends.com/cdn/5.7.2/img/passive/shadowninja_P.png"></th>
+						<th><img src="http://ddragon.leagueoflegends.com/cdn/5.7.2/img/passive/shadowninja_P.png"></th>
+						<th><img src="http://ddragon.leagueoflegends.com/cdn/5.7.2/img/passive/shadowninja_P.png"></th>
+					</tr>
+					<tr>
+						<th><img src="http://ddragon.leagueoflegends.com/cdn/5.7.2/img/passive/shadowninja_P.png"></th>
+						<th><img src="http://ddragon.leagueoflegends.com/cdn/5.7.2/img/passive/shadowninja_P.png"></th>
+						<th><img src="http://ddragon.leagueoflegends.com/cdn/5.7.2/img/passive/shadowninja_P.png"></th>
+						<th><img src="http://ddragon.leagueoflegends.com/cdn/5.7.2/img/passive/shadowninja_P.png"></th>
+					</tr>
+				</table>
+			</div>
+			<button id="restore">Restore</button>	
+		</div>
+	</body>
+<html>
